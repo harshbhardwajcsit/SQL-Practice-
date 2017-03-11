@@ -1,0 +1,16 @@
+-- sol 1
+select sname from S where sid in(select sid from M where pid in(select pid from P where colour='red'))
+-- result : ambuja
+
+-- sol 2
+ select sid from M where pid in(select pid from P where colour='red' or colour='green')
+-- result : 11,21
+
+-- sol 3
+select sid from S where address='platform' and sid in(select sid from M where pid in(select pid from P where colour='red'))
+-- result : 11,31
+
+-- sol 4
+ select pid from M where cost in(select max(cost) from M)
+-- result :3
+
