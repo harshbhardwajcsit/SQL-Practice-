@@ -1,0 +1,51 @@
+
+-- probm :  find no. sid(suppliers) produced each pid 
+-- prblm : find products(pid) by each supplier
+-- prblm : find suppliers(sid) produce more than 2 products (pid)
+
+CREATE TABLE S
+	(`sid` int, `sname` varchar(7), `address` varchar(10))
+;
+	
+INSERT INTO S
+	(`sid`, `sname`, `address`)
+VALUES
+	(11, 'ambuja', 'Platform'),
+	(21, 'ARG', 'Full'),
+	(31, 'UDB', 'platform'),
+    (41, 'UDC', 'Junc'),
+    (51, 'UDB', 'Skit')
+;
+
+
+CREATE TABLE P
+	(`pid` int,  `pname` varchar(15), `colour` varchar(10))
+;
+	
+INSERT INTO P
+	(`pid`,  `pname`, `colour`)
+VALUES
+	(1, 'OpenIDM','red'),
+	(2, 'OpenAM', 'green'),
+	(3, 'OpenDJ','red'),
+    (4, 'OpenDK','Black'),
+    (5, 'OpenPPL','purple')
+    
+    ;
+    
+    CREATE TABLE M
+	(`sid` int,  `pid` int, `cost` varchar(10))
+     ;
+	
+INSERT INTO M
+	(`sid`,  `pid`, `cost`)
+VALUES
+	(11, 1,'20K'),
+	(21, 2,'30K'),
+	(31, 3,'40K'),
+    (11, 3,'40K'),
+    (21, 1,'50K'),
+    (41, 4,'60K'),
+    (51, 3,'70K'),
+    (11, 5,'80K')
+    ;
