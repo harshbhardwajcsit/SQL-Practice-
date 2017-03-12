@@ -1,0 +1,30 @@
+Flights(flno: integer, from: string, to: string,distance: integer, departs: time, arrives: time)
+
+Aircraft(aid: integer, aname: string, cruisingrange: integer)
+
+Certied(eid: integer, aid: integer)
+
+Employees(eid: integer, ename: string, salary: integer)
+
+
+
+
+1. Find the eids of pilots certied for some Boeing aircraft.
+
+2. Find the names of pilots certied for some Boeing aircraft.
+
+3. Find the aids of all aircraft that can be used on non-stop flights from Bonn to Madras.
+
+4. Identify the flights that can be piloted by every pilot whose salary is more than $100,000.
+
+5. Find the names of pilots who can operate planes with a range greater than 3,000 miles but are not certied on any Boeing aircraft.
+
+6. Find the eids of employees who make the highest salary.
+
+7. Find the eids of employees who make the second highest salary.
+
+8. Find the eids of employees who are certied for the largest number of aircraft.
+
+9. Find the eids of employees who are certied for exactly three aircraft.
+
+10. Find the total amount paid to employees as salaries.
