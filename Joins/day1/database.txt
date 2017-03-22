@@ -55,3 +55,20 @@ VALUES
     ;
     
     
+    
+            
+ CREATE TABLE Employee
+     (`eid` int, `ename` varchar(25),`salary` int)
+;
+	
+INSERT INTO Employee
+	(`eid`,  `ename` , `salary`)
+VALUES
+	(11,'rahul',9),
+    (12,'rishab',10),
+    (13,'romy',6),
+    (14,'karan',10),
+    (15,'harsh',11),
+    (16,'dhawal',12)
+   
+    ;
